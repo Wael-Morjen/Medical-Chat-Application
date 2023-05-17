@@ -5,7 +5,7 @@ import Cookies from 'universal-cookie';
 
 import { ChannelContainer, ChannelListContainer, Auth } from './components';
 
-import './App.css'; 
+import './App.css';
 
 const apiKey = 'rrv37jzveb58';
 
@@ -17,7 +17,7 @@ const authToken = false;
 const App = () => {
 
   if (!authToken) return <Auth />;
-  
+
   return (
     <div className="app__wrapper">
       <Chat client={chatClient} theme="team light">
